@@ -1,0 +1,59 @@
+id: 1.0
+object: grater_root
+attractor:
+- [-1.0, 0.0, 0.0, 0.1]
+- [0.0, 1.0, 0.0, -0.12]
+- [0.0, 0.0, -1.0, 0.3]
+- [0.0, 0.0, 0.0, 1.0]
+threshold: 0.0020
+model:
+- modeltype: CDS
+  modelfile:
+  - name: PositionDyn.gmm
+    gmmtype: Master
+    input:
+      type: Position
+      dim: [x, y, z]
+    output:
+      type: Velocity
+      dim: [x, y, z]
+  - name: SlaveDyn.gmm
+    gmmtype: Slave
+    input:
+      type: Orientation
+      dim: [x, y, z]
+    output:
+      type: Velocity
+      dim: [x, y, z]
+  - name: CouplingDyn.gmm
+    gmmtype: Coupling
+    input:
+      type: Other
+      dim: ['*', '*']
+    output:
+      type: Other
+      dim: ['*']
+- modeltype: GMR
+  modelfile:
+  - name: Force.gmm
+    input:
+      type: Position
+      dim: [x, y]
+    output:
+      type: Force
+      dim: [z]
+  - name: []
+    input: []
+    output: []
+- modeltype: GMR
+  modelfile:
+  - name: Stiffness.gmm
+    input:
+      type: Position
+      dim: [x, y, z]
+    output:
+      type: Stiffness
+      dim: [x, y, z]
+  - name: []
+    input: []
+    output: []

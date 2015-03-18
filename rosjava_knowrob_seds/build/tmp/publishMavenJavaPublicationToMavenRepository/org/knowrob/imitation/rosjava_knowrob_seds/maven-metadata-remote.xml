@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.knowrob.imitation</groupId>
+  <artifactId>rosjava_knowrob_seds</artifactId>
+  <version>0.1.0</version>
+  <versioning>
+    <versions>
+      <version>0.1.0</version>
+    </versions>
+    <lastUpdated>20150318215636</lastUpdated>
+  </versioning>
+</metadata>

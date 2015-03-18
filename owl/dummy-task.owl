@@ -1,0 +1,2933 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY local_path 'file://@LOCAL_PACKAGE_PATH@/owl/'>
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
+    <!ENTITY seds "http://knowrob.org/kb/knowrob-seds.owl#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://knowrob.org/kb/seds.owl#"
+     xml:base="http://knowrob.org/kb/seds.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:knowrob-seds="http://knowrob.org/kb/knowrob-seds.owl#"
+     xmlns:knowrob="http://knowrob.org/kb/knowrob.owl#">
+    <owl:Ontology rdf:about="http://knowrob.org/kb/seds.owl#">
+        <owl:imports rdf:resource="&local_path;knowrob-seds.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#cov -->
+
+    <owl:ObjectProperty rdf:about="&seds;cov"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#describedByGMM -->
+
+    <owl:ObjectProperty rdf:about="&seds;describedByGMM"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#describedByMotionModel -->
+
+    <owl:ObjectProperty rdf:about="&seds;describedByMotionModel"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#gaussianDist -->
+
+    <owl:ObjectProperty rdf:about="&seds;gaussianDist"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#mean -->
+
+    <owl:ObjectProperty rdf:about="&seds;mean"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phaseAttractor -->
+
+    <owl:ObjectProperty rdf:about="&seds;phaseAttractor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#inputDim -->
+
+    <owl:DatatypeProperty rdf:about="&seds;inputDim"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#inputType -->
+
+    <owl:DatatypeProperty rdf:about="&seds;inputType"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#outputDim -->
+
+    <owl:DatatypeProperty rdf:about="&seds;outputDim"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#outputType -->
+
+    <owl:DatatypeProperty rdf:about="&seds;outputType"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phaseID -->
+
+    <owl:DatatypeProperty rdf:about="&seds;phaseID"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phaseObject -->
+
+    <owl:DatatypeProperty rdf:about="&seds;phaseObject"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phaseThreshold -->
+
+    <owl:DatatypeProperty rdf:about="&seds;phaseThreshold"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#prior -->
+
+    <owl:DatatypeProperty rdf:about="&seds;prior"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m00 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m00"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m01 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m01"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m02 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m02"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m03 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m03"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m04 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m04"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m05 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m05"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m10 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m10"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m11 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m11"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m12 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m12"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m13 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m13"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m14 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m14"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m15 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m15"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m20 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m20"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m21 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m21"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m22 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m22"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m23 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m23"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m24 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m24"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m25 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m25"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m30 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m30"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m31 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m31"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m32 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m32"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m33 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m33"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m34 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m34"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m35 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m35"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m40 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m40"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m41 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m41"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m42 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m42"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m43 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m43"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m44 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m44"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m45 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m45"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m50 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m50"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m51 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m51"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m52 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m52"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m53 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m53"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m54 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m54"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#m55 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;m55"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v0 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v0"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v1 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v1"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v2 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v2"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v3 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v3"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v4 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v4"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#v5 -->
+
+    <owl:DatatypeProperty rdf:about="&knowrob;v5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CDSModel -->
+
+    <owl:Class rdf:about="&seds;CDSModel"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CouplingGMM -->
+
+    <owl:Class rdf:about="&seds;CouplingGMM"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel -->
+
+    <owl:Class rdf:about="&seds;GMRModel"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution -->
+
+    <owl:Class rdf:about="&seds;GaussianDistribution"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianMixtureModel -->
+
+    <owl:Class rdf:about="&seds;GaussianMixtureModel"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#MasterGMM -->
+
+    <owl:Class rdf:about="&seds;MasterGMM"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#SEDSMotion -->
+
+    <owl:Class rdf:about="&seds;SEDSMotion"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#SlaveGMM -->
+
+    <owl:Class rdf:about="&seds;SlaveGMM"/>
+    
+
+
+    <owl:Class rdf:about="&seds;FlippingAnObject">
+        <rdfs:label rdf:datatype="&xsd;string">dummy flipping task</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&knowrob;FlippingAnObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;subAction"/>
+                <owl:someValuesFrom rdf:resource="&seds;phase1_huX26HOl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;subAction"/>
+                <owl:someValuesFrom rdf:resource="&seds;phase2_SYjwVqDr"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;subAction"/>
+                <owl:someValuesFrom rdf:resource="&seds;phase3_7eAdc7As"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;orderingConstraints"/>
+                <owl:hasValue rdf:resource="&seds;FlippingAnObject12_TErh36jh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;orderingConstraints"/>
+                <owl:hasValue rdf:resource="&seds;FlippingAnObject01_h07dZAdY"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&knowrob;orderingConstraints"/>
+                <owl:hasValue rdf:resource="&seds;FlippingAnObject02_KERjv8Bd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+
+    <owl:NamedIndividual rdf:about="&seds;FlippingAnObject01_h07dZAdY">
+        <rdf:type rdf:resource="&knowrob;PartialOrdering-Strict"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="&seds;phase1_huX26HOl"/>
+        <knowrob:occursAfterInOrdering rdf:resource="&seds;phase2_SYjwVqDr"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&seds;FlippingAnObject02_KERjv8Bd">
+        <rdf:type rdf:resource="&knowrob;PartialOrdering-Strict"/>
+        <knowrob:occursAfterInOrdering rdf:resource="&seds;phase1_huX26HOl"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="&seds;phase3_7eAdc7As"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&seds;FlippingAnObject12_TErh36jh">
+        <rdf:type rdf:resource="&knowrob;PartialOrdering-Strict"/>
+        <knowrob:occursBeforeInOrdering rdf:resource="&seds;phase2_SYjwVqDr"/>
+        <knowrob:occursAfterInOrdering rdf:resource="&seds;phase3_7eAdc7As"/>
+    </owl:NamedIndividual>
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phase1_huX26HOl -->
+
+    <owl:Class rdf:about="&seds;phase1_huX26HOl">
+        <rdfs:subClassOf rdf:resource="&seds;SEDSMotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;CDSModel_SIrinOut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_3Tm31pqG"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseObject"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grater_root</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseThreshold"/>
+                <owl:hasValue rdf:datatype="&xsd;double">0.002</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_XjwG77Qd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseID"/>
+                <owl:hasValue rdf:datatype="&xsd;double">1.0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseAttractor"/>
+                <owl:hasValue rdf:resource="&knowrob;Matrix_fIyQhOn6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phase2_SYjwVqDr -->
+
+    <owl:Class rdf:about="&seds;phase2_SYjwVqDr">
+        <rdfs:subClassOf rdf:resource="&seds;SEDSMotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseObject"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grater_root</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseID"/>
+                <owl:hasValue rdf:datatype="&xsd;double">1.0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_I3seHZgd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_72ygcXBE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseThreshold"/>
+                <owl:hasValue rdf:datatype="&xsd;double">0.002</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseAttractor"/>
+                <owl:hasValue rdf:resource="&knowrob;Matrix_5YeJsrIE"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;CDSModel_WSE3VnfA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#phase3_7eAdc7As -->
+
+    <owl:Class rdf:about="&seds;phase3_7eAdc7As">
+        <rdfs:subClassOf rdf:resource="&seds;SEDSMotion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseObject"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">grater_root</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_yMi1fnhl"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;CDSModel_kBku9Lpj"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseAttractor"/>
+                <owl:hasValue rdf:resource="&knowrob;Matrix_9YXo2X3J"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseID"/>
+                <owl:hasValue rdf:datatype="&xsd;double">1.0</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;describedByMotionModel"/>
+                <owl:hasValue rdf:resource="&seds;GMRModel_uf5R1y7M"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&seds;phaseThreshold"/>
+                <owl:hasValue rdf:datatype="&xsd;double">0.002</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix -->
+
+    <owl:Class rdf:about="&knowrob;Matrix"/>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector -->
+
+    <owl:Class rdf:about="&knowrob;Vector"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CDSModel_SIrinOut -->
+
+    <owl:NamedIndividual rdf:about="&seds;CDSModel_SIrinOut">
+        <rdf:type rdf:resource="&seds;CDSModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;CouplingDyn_iSTmjLYe"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;PositionDyn_u4uGBvp1"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;SlaveDyn_J8xc1wYb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CDSModel_WSE3VnfA -->
+
+    <owl:NamedIndividual rdf:about="&seds;CDSModel_WSE3VnfA">
+        <rdf:type rdf:resource="&seds;CDSModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;CouplingDyn_l9s0twDI"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;PositionDyn_pvrLgcSs"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;SlaveDyn_YSdN9hUU"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CDSModel_kBku9Lpj -->
+
+    <owl:NamedIndividual rdf:about="&seds;CDSModel_kBku9Lpj">
+        <rdf:type rdf:resource="&seds;CDSModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;CouplingDyn_HM2lPSgt"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;PositionDyn_61Lv5t1E"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;SlaveDyn_gx2DSLFj"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CouplingDyn_HM2lPSgt -->
+
+    <owl:NamedIndividual rdf:about="&seds;CouplingDyn_HM2lPSgt">
+        <rdf:type rdf:resource="&seds;CouplingGMM"/>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*-*</knowrob-seds:inputDim>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:outputType>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:inputType>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_Dn0k0GRR"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_KGoRRPSD"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_nIvoLQKe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CouplingDyn_iSTmjLYe -->
+
+    <owl:NamedIndividual rdf:about="&seds;CouplingDyn_iSTmjLYe">
+        <rdf:type rdf:resource="&seds;CouplingGMM"/>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*-*</knowrob-seds:inputDim>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:outputType>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_chGPBAXs"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_fb2lBxxB"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_zhzjFA4Q"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#CouplingDyn_l9s0twDI -->
+
+    <owl:NamedIndividual rdf:about="&seds;CouplingDyn_l9s0twDI">
+        <rdf:type rdf:resource="&seds;CouplingGMM"/>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">*-*</knowrob-seds:inputDim>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:outputType>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Other</knowrob-seds:inputType>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_QHnQrhmH"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_X3An0snt"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_h70ifuTI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Force_IPQ8XmTr -->
+
+    <owl:NamedIndividual rdf:about="&seds;Force_IPQ8XmTr">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force</knowrob-seds:outputType>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_EKxeGmar"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_EoX7h9sO"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_NsxNLcVS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Force_SfNcS68V -->
+
+    <owl:NamedIndividual rdf:about="&seds;Force_SfNcS68V">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force</knowrob-seds:outputType>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_DSb5cTpi"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_JdqzV3q5"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_ydulm4nT"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Force_eHM60kL8 -->
+
+    <owl:NamedIndividual rdf:about="&seds;Force_eHM60kL8">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Force</knowrob-seds:outputType>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_aFteUj36"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_fQKoppTY"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_oWk7Urm3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_3Tm31pqG -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_3Tm31pqG">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Force_IPQ8XmTr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_72ygcXBE -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_72ygcXBE">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Stiffness_3ZfpVXSS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_I3seHZgd -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_I3seHZgd">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Force_SfNcS68V"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_XjwG77Qd -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_XjwG77Qd">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Stiffness_DdZL46kX"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_uf5R1y7M -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_uf5R1y7M">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Stiffness_pcL1KymK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GMRModel_yMi1fnhl -->
+
+    <owl:NamedIndividual rdf:about="&seds;GMRModel_yMi1fnhl">
+        <rdf:type rdf:resource="&seds;GMRModel"/>
+        <knowrob-seds:describedByGMM rdf:resource="&seds;Force_eHM60kL8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_1dQe84qm -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_1dQe84qm">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_ETYPil1i"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_YXwLmpwv"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_DSb5cTpi -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_DSb5cTpi">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.39691792</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_zO8MlRTk"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_AYQwaWP0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_Dn0k0GRR -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_Dn0k0GRR">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.38620717</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_I1S4XvSi"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_Ev8FnJZK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_EKxeGmar -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_EKxeGmar">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.31948788</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_BuBAebSF"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_AjEf19IO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_EoX7h9sO -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_EoX7h9sO">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.39691792</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_q65cf18T"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_FwTrvdSH"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_F6flKue0 -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_F6flKue0">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.86866146</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_iVS8OrcU"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_ZZ2wYsOx"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_HOBwymGp -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_HOBwymGp">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.86866146</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_zlqGA9vM"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_OMfTPlZA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_JdqzV3q5 -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_JdqzV3q5">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.2835942</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_6SAVYUrL"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_GMwAdQZr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_KGoRRPSD -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_KGoRRPSD">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.27219852</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_HpsbpGAT"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_ffjyOABB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_MaSuQwu9 -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_MaSuQwu9">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_qlHlYBwD"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_vn1ceDgF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_Nc8dsAMb -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_Nc8dsAMb">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_79IQiy9x"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_aa1HyASz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_NsxNLcVS -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_NsxNLcVS">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.2835942</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_S8hwS2Xh"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_OSv9Zg6L"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_Q4byhthk -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_Q4byhthk">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.13133854</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_c8W6Lx2B"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_VXIFKq7x"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_QHnQrhmH -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_QHnQrhmH">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.38620717</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_qEq7uhKj"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_qO0SkkG0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_SMkFimXp -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_SMkFimXp">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.13133854</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_UAWWTfbS"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_DpJxQ9fM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_X3An0snt -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_X3An0snt">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.27219852</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_yK2O2jdn"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_wBRUneQr"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_aFteUj36 -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_aFteUj36">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.31948788</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_crpBoFRh"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_bOrx9naW"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_chGPBAXs -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_chGPBAXs">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.34159432</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_01M08rFI"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_dpEaPF6l"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_dXcDsWVP -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_dXcDsWVP">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_YynqfJsZ"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_0VTMeUbN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_fQKoppTY -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_fQKoppTY">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.39691792</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_3BrG6JWY"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_gvIsEHBj"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_fb2lBxxB -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_fb2lBxxB">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.38620717</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_PUde4q0t"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_glZGPSHu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_h70ifuTI -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_h70ifuTI">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.34159432</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_NO3kqlMx"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_0DXsggK4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_kr9U1cSp -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_kr9U1cSp">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_l5zMAYaP"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_tbbu63ER"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_mJiPmQxc -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_mJiPmQxc">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.13133854</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_7xjYJKQ9"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_EFRpcOVy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_nIvoLQKe -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_nIvoLQKe">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.34159432</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_kpyKjItu"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_jhSp6DlB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_oIh0Tkne -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_oIh0Tkne">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">1.0</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_rSSFVhXn"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_LIbSZjtA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_oWk7Urm3 -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_oWk7Urm3">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.2835942</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_JFT7fNAA"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_pzkabJ5l"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_sxYRpKIu -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_sxYRpKIu">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.86866146</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_NBJnTMsM"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_hFZY7ONa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_ydulm4nT -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_ydulm4nT">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.31948788</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_vUxFUU60"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_uMBmGPWg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#GaussianDistribution_zhzjFA4Q -->
+
+    <owl:NamedIndividual rdf:about="&seds;GaussianDistribution_zhzjFA4Q">
+        <rdf:type rdf:resource="&seds;GaussianDistribution"/>
+        <knowrob-seds:prior rdf:datatype="&xsd;double">0.27219852</knowrob-seds:prior>
+        <knowrob-seds:cov rdf:resource="&knowrob;Matrix_wYDDdsL6"/>
+        <knowrob-seds:mean rdf:resource="&knowrob;Vector_opBomE9w"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#PositionDyn_61Lv5t1E -->
+
+    <owl:NamedIndividual rdf:about="&seds;PositionDyn_61Lv5t1E">
+        <rdf:type rdf:resource="&seds;MasterGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_Nc8dsAMb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#PositionDyn_pvrLgcSs -->
+
+    <owl:NamedIndividual rdf:about="&seds;PositionDyn_pvrLgcSs">
+        <rdf:type rdf:resource="&seds;MasterGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_kr9U1cSp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#PositionDyn_u4uGBvp1 -->
+
+    <owl:NamedIndividual rdf:about="&seds;PositionDyn_u4uGBvp1">
+        <rdf:type rdf:resource="&seds;MasterGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_oIh0Tkne"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#SlaveDyn_J8xc1wYb -->
+
+    <owl:NamedIndividual rdf:about="&seds;SlaveDyn_J8xc1wYb">
+        <rdf:type rdf:resource="&seds;SlaveGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientation</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_F6flKue0"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_Q4byhthk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#SlaveDyn_YSdN9hUU -->
+
+    <owl:NamedIndividual rdf:about="&seds;SlaveDyn_YSdN9hUU">
+        <rdf:type rdf:resource="&seds;SlaveGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientation</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_HOBwymGp"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_SMkFimXp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#SlaveDyn_gx2DSLFj -->
+
+    <owl:NamedIndividual rdf:about="&seds;SlaveDyn_gx2DSLFj">
+        <rdf:type rdf:resource="&seds;SlaveGMM"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orientation</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</knowrob-seds:outputType>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_mJiPmQxc"/>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_sxYRpKIu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Stiffness_3ZfpVXSS -->
+
+    <owl:NamedIndividual rdf:about="&seds;Stiffness_3ZfpVXSS">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stiffness</knowrob-seds:outputType>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_dXcDsWVP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Stiffness_DdZL46kX -->
+
+    <owl:NamedIndividual rdf:about="&seds;Stiffness_DdZL46kX">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stiffness</knowrob-seds:outputType>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_1dQe84qm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob-seds.owl#Stiffness_pcL1KymK -->
+
+    <owl:NamedIndividual rdf:about="&seds;Stiffness_pcL1KymK">
+        <rdf:type rdf:resource="&seds;GaussianMixtureModel"/>
+        <knowrob-seds:inputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</knowrob-seds:inputType>
+        <knowrob-seds:outputType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stiffness</knowrob-seds:outputType>
+        <knowrob-seds:outputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:outputDim>
+        <knowrob-seds:inputDim rdf:datatype="http://www.w3.org/2001/XMLSchema#string">x-y-z</knowrob-seds:inputDim>
+        <knowrob-seds:gaussianDist rdf:resource="&seds;GaussianDistribution_MaSuQwu9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_01M08rFI -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_01M08rFI">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.00153021</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.00153021</knowrob:m10>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.0021042612</knowrob:m33>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.0037855191</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0037855191</knowrob:m30>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0049910257</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0049910257</knowrob:m20>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.086260343</knowrob:m00>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m12>
+        <knowrob:m31 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m13>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.3828376E-4</knowrob:m11>
+        <knowrob:m22 rdf:datatype="&xsd;double">6.6792138E-4</knowrob:m22>
+        <knowrob:m32 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m23>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_3BrG6JWY -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_3BrG6JWY">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m50 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m05>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m41>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m32>
+        <knowrob:m31 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m13>
+        <knowrob:m30 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m03>
+        <knowrob:m21 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m12>
+        <knowrob:m40 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m04>
+        <knowrob:m54 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m45>
+        <knowrob:m52 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m25>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.2242652E-5</knowrob:m11>
+        <knowrob:m02 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m20>
+        <knowrob:m44 rdf:datatype="&xsd;double">1.3805615E-4</knowrob:m44>
+        <knowrob:m00 rdf:datatype="&xsd;double">2.3298952E-6</knowrob:m00>
+        <knowrob:m01 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m10>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.2781253E-5</knowrob:m33>
+        <knowrob:m34 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m43>
+        <knowrob:m22 rdf:datatype="&xsd;double">4.5378054E-6</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m24>
+        <knowrob:m35 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m53>
+        <knowrob:m51 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m15>
+        <knowrob:m55 rdf:datatype="&xsd;double">6.7392219E-5</knowrob:m55>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_5YeJsrIE -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_5YeJsrIE">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.12</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">-1.0</knowrob:m22>
+        <knowrob:m00 rdf:datatype="&xsd;double">-1.0</knowrob:m00>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0</knowrob:m02>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.1</knowrob:m03>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.3</knowrob:m23>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_6SAVYUrL -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_6SAVYUrL">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m25>
+        <knowrob:m12 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m21>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.00625962</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.00625962</knowrob:m32>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m50>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m10>
+        <knowrob:m54 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m45>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.016636179</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.016636179</knowrob:m41>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.050167256</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.050167256</knowrob:m03>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.085223056</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.085223056</knowrob:m43>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.002843383</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.002843383</knowrob:m02>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.0037034065</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.0037034065</knowrob:m51>
+        <knowrob:m24 rdf:datatype="&xsd;double">0.0038401797</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">0.0038401797</knowrob:m42>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.0054682542</knowrob:m11>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.01650557</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.01650557</knowrob:m31>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.016601425</knowrob:m55>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.019167325</knowrob:m00>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.02666631</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.02666631</knowrob:m53>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.034343766</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.034343766</knowrob:m04>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.085597061</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.19728095</knowrob:m33>
+        <knowrob:m22 rdf:datatype="&xsd;double">5.5361006E-4</knowrob:m22>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_79IQiy9x -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_79IQiy9x">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_7xjYJKQ9 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_7xjYJKQ9">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.42981288</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.42981288</knowrob:m25>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.44980236</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.44980236</knowrob:m15>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.74407047</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.74407047</knowrob:m13>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.1757629</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.1757629</knowrob:m14>
+        <knowrob:m24 rdf:datatype="&xsd;double">-1.4389243</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-1.4389243</knowrob:m42>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.577436</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.577436</knowrob:m23>
+        <knowrob:m04 rdf:datatype="&xsd;double">-3.3215824</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">-3.3215824</knowrob:m40>
+        <knowrob:m30 rdf:datatype="&xsd;double">-6.3971355</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-6.3971355</knowrob:m03>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.028931905</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.028931905</knowrob:m10>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.095384431</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.095384431</knowrob:m21>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.11835586</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.11835586</knowrob:m53>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.15728112</knowrob:m22>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.17839414</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.17839414</knowrob:m45>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.23305627</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.23305627</knowrob:m20>
+        <knowrob:m50 rdf:datatype="&xsd;double">0.29519227</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">0.29519227</knowrob:m05>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.3440019</knowrob:m11>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.69258486</knowrob:m00>
+        <knowrob:m55 rdf:datatype="&xsd;double">3.7365424</knowrob:m55>
+        <knowrob:m34 rdf:datatype="&xsd;double">32.464767</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">32.464767</knowrob:m43>
+        <knowrob:m44 rdf:datatype="&xsd;double">61.340634</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">61.377364</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_9YXo2X3J -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_9YXo2X3J">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.12</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">-1.0</knowrob:m22>
+        <knowrob:m00 rdf:datatype="&xsd;double">-1.0</knowrob:m00>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0</knowrob:m02>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.1</knowrob:m03>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.3</knowrob:m23>
+        <knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_BuBAebSF -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_BuBAebSF">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m15>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m31>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.010770064</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.010770064</knowrob:m01>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.02431861</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.02431861</knowrob:m14>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.13633702</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.13633702</knowrob:m34>
+        <knowrob:m32 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m23>
+        <knowrob:m25 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m52>
+        <knowrob:m12 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m21>
+        <knowrob:m30 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m03>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.002308019</knowrob:m55>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.0051600562</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.0051600562</knowrob:m54>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.0079228532</knowrob:m00>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.011125515</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.011125515</knowrob:m40>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.022255551</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.085262824</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.34406829</knowrob:m44>
+        <knowrob:m22 rdf:datatype="&xsd;double">1.9972634E-4</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m24>
+        <knowrob:m50 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m05>
+        <knowrob:m20 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m02>
+        <knowrob:m53 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m35>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_ETYPil1i -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_ETYPil1i">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_HpsbpGAT -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_HpsbpGAT">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m02 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m20>
+        <knowrob:m01 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m10>
+        <knowrob:m30 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m03>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m21>
+        <knowrob:m22 rdf:datatype="&xsd;double">2.2854818E-8</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.774291E-4</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.7857238E-4</knowrob:m33>
+        <knowrob:m32 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m23>
+        <knowrob:m00 rdf:datatype="&xsd;double">6.4318088E-6</knowrob:m00>
+        <knowrob:m13 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m31>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_I1S4XvSi -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_I1S4XvSi">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m20 rdf:datatype="&xsd;double">-0.073464741</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">-0.073464741</knowrob:m02>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.086040875</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.086040875</knowrob:m01>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.20233518</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.20233518</knowrob:m30>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.13291964</knowrob:m00>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.17144932</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.17144932</knowrob:m32>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.18951249</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.18951249</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.19018615</knowrob:m22>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.21574878</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.21574878</knowrob:m12>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.25281294</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.60740188</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_JFT7fNAA -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_JFT7fNAA">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m52>
+        <knowrob:m12 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m21>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.00625962</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.00625962</knowrob:m32>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m50>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m10>
+        <knowrob:m45 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m54>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.016636179</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.016636179</knowrob:m41>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.050167256</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.050167256</knowrob:m03>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.085223056</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.085223056</knowrob:m43>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.002843383</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.002843383</knowrob:m02>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.0037034065</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.0037034065</knowrob:m15>
+        <knowrob:m42 rdf:datatype="&xsd;double">0.0038401797</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">0.0038401797</knowrob:m24>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.0054682542</knowrob:m11>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.01650557</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.01650557</knowrob:m13>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.016601425</knowrob:m55>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.019167325</knowrob:m00>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.02666631</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.02666631</knowrob:m53>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.034343766</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.034343766</knowrob:m40>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.085597061</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.19728095</knowrob:m33>
+        <knowrob:m22 rdf:datatype="&xsd;double">5.5361006E-4</knowrob:m22>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_NBJnTMsM -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_NBJnTMsM">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m05>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.015847272</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.015847272</knowrob:m40>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.063070203</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.063070203</knowrob:m42>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.38262094</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.38262094</knowrob:m14>
+        <knowrob:m52 rdf:datatype="&xsd;double">0.020164458</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">0.020164458</knowrob:m25>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.055197056</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.055197056</knowrob:m30>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.096867201</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.096867201</knowrob:m23>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.16187112</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.16187112</knowrob:m15>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.1799161</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.1799161</knowrob:m31>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.33293665</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.33293665</knowrob:m01>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.3433764</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.3433764</knowrob:m12>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.34349214</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.34349214</knowrob:m02>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.34812183</knowrob:m00>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.36669077</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.38102999</knowrob:m11>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.47392558</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.47392558</knowrob:m45>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.9356004</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.9356004</knowrob:m43>
+        <knowrob:m53 rdf:datatype="&xsd;double">1.3368266</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">1.3368266</knowrob:m35>
+        <knowrob:m55 rdf:datatype="&xsd;double">1.9431492</knowrob:m55>
+        <knowrob:m33 rdf:datatype="&xsd;double">2.0375961</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">4.6157706</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_NO3kqlMx -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_NO3kqlMx">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.00153021</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.00153021</knowrob:m01>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.0021042612</knowrob:m33>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.0037855191</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0037855191</knowrob:m30>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0049910257</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0049910257</knowrob:m20>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.086260343</knowrob:m00>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m12>
+        <knowrob:m31 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m13>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.3828376E-4</knowrob:m11>
+        <knowrob:m22 rdf:datatype="&xsd;double">6.6792138E-4</knowrob:m22>
+        <knowrob:m23 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_PUde4q0t -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_PUde4q0t">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m20 rdf:datatype="&xsd;double">-0.073464741</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">-0.073464741</knowrob:m02>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.086040875</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.086040875</knowrob:m01>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.20233518</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.20233518</knowrob:m30>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.13291964</knowrob:m00>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.17144932</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.17144932</knowrob:m23>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.18951249</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.18951249</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.19018615</knowrob:m22>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.21574878</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.21574878</knowrob:m21>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.25281294</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.60740188</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_S8hwS2Xh -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_S8hwS2Xh">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.0012110909</knowrob:m52>
+        <knowrob:m21 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">-0.0012892084</knowrob:m12>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.00625962</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.00625962</knowrob:m32>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0077993468</knowrob:m05>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.0085320578</knowrob:m01>
+        <knowrob:m45 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">-0.0087507871</knowrob:m54>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.016636179</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.016636179</knowrob:m41>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.050167256</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.050167256</knowrob:m03>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.085223056</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.085223056</knowrob:m34>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.002843383</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.002843383</knowrob:m20>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.0037034065</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.0037034065</knowrob:m15>
+        <knowrob:m24 rdf:datatype="&xsd;double">0.0038401797</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">0.0038401797</knowrob:m42>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.0054682542</knowrob:m11>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.01650557</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.01650557</knowrob:m13>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.016601425</knowrob:m55>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.019167325</knowrob:m00>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.02666631</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.02666631</knowrob:m35>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.034343766</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.034343766</knowrob:m40>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.085597061</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.19728095</knowrob:m33>
+        <knowrob:m22 rdf:datatype="&xsd;double">5.5361006E-4</knowrob:m22>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_UAWWTfbS -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_UAWWTfbS">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.42981288</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.42981288</knowrob:m25>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.44980236</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.44980236</knowrob:m51>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.74407047</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.74407047</knowrob:m13>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.1757629</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.1757629</knowrob:m41>
+        <knowrob:m42 rdf:datatype="&xsd;double">-1.4389243</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-1.4389243</knowrob:m24>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.577436</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.577436</knowrob:m32>
+        <knowrob:m40 rdf:datatype="&xsd;double">-3.3215824</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-3.3215824</knowrob:m04>
+        <knowrob:m03 rdf:datatype="&xsd;double">-6.3971355</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-6.3971355</knowrob:m30>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.028931905</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.028931905</knowrob:m01>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.095384431</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.095384431</knowrob:m12>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.11835586</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.11835586</knowrob:m35>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.15728112</knowrob:m22>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.17839414</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.17839414</knowrob:m45>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.23305627</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.23305627</knowrob:m02>
+        <knowrob:m50 rdf:datatype="&xsd;double">0.29519227</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">0.29519227</knowrob:m05>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.3440019</knowrob:m11>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.69258486</knowrob:m00>
+        <knowrob:m55 rdf:datatype="&xsd;double">3.7365424</knowrob:m55>
+        <knowrob:m34 rdf:datatype="&xsd;double">32.464767</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">32.464767</knowrob:m43>
+        <knowrob:m44 rdf:datatype="&xsd;double">61.340634</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">61.377364</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_YynqfJsZ -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_YynqfJsZ">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_c8W6Lx2B -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_c8W6Lx2B">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.42981288</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.42981288</knowrob:m52>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.44980236</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.44980236</knowrob:m15>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.74407047</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.74407047</knowrob:m31>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.1757629</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.1757629</knowrob:m41>
+        <knowrob:m24 rdf:datatype="&xsd;double">-1.4389243</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-1.4389243</knowrob:m42>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.577436</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.577436</knowrob:m23>
+        <knowrob:m40 rdf:datatype="&xsd;double">-3.3215824</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-3.3215824</knowrob:m04>
+        <knowrob:m03 rdf:datatype="&xsd;double">-6.3971355</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-6.3971355</knowrob:m30>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.028931905</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.028931905</knowrob:m10>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.095384431</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.095384431</knowrob:m21>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.11835586</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.11835586</knowrob:m53>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.15728112</knowrob:m22>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.17839414</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.17839414</knowrob:m54>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.23305627</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.23305627</knowrob:m02>
+        <knowrob:m50 rdf:datatype="&xsd;double">0.29519227</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">0.29519227</knowrob:m05>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.3440019</knowrob:m11>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.69258486</knowrob:m00>
+        <knowrob:m55 rdf:datatype="&xsd;double">3.7365424</knowrob:m55>
+        <knowrob:m34 rdf:datatype="&xsd;double">32.464767</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">32.464767</knowrob:m43>
+        <knowrob:m44 rdf:datatype="&xsd;double">61.340634</knowrob:m44>
+        <knowrob:m33 rdf:datatype="&xsd;double">61.377364</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_crpBoFRh -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_crpBoFRh">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m15>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m13>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.010770064</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.010770064</knowrob:m10>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.02431861</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.02431861</knowrob:m41>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.13633702</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.13633702</knowrob:m43>
+        <knowrob:m32 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m23>
+        <knowrob:m25 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m52>
+        <knowrob:m21 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m12>
+        <knowrob:m30 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m03>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.002308019</knowrob:m55>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.0051600562</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.0051600562</knowrob:m45>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.0079228532</knowrob:m00>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.011125515</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.011125515</knowrob:m40>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.022255551</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.085262824</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.34406829</knowrob:m44>
+        <knowrob:m22 rdf:datatype="&xsd;double">1.9972634E-4</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m24>
+        <knowrob:m50 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m05>
+        <knowrob:m20 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m02>
+        <knowrob:m35 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m53>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_fIyQhOn6 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_fIyQhOn6">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.12</knowrob:m13>
+        <knowrob:m00 rdf:datatype="&xsd;double">-1.0</knowrob:m00>
+        <knowrob:m22 rdf:datatype="&xsd;double">-1.0</knowrob:m22>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0</knowrob:m02>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.0</knowrob:m01>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0</knowrob:m30>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.0</knowrob:m10>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0</knowrob:m20>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.0</knowrob:m32>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0</knowrob:m21>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.0</knowrob:m31>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.1</knowrob:m03>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.3</knowrob:m23>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.0</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">1.0</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_iVS8OrcU -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_iVS8OrcU">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m05>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.015847272</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.015847272</knowrob:m04>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.063070203</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.063070203</knowrob:m24>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.38262094</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.38262094</knowrob:m14>
+        <knowrob:m52 rdf:datatype="&xsd;double">0.020164458</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">0.020164458</knowrob:m25>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.055197056</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.055197056</knowrob:m30>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.096867201</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.096867201</knowrob:m32>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.16187112</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.16187112</knowrob:m15>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.1799161</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.1799161</knowrob:m13>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.33293665</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.33293665</knowrob:m10>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.3433764</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.3433764</knowrob:m12>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.34349214</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.34349214</knowrob:m02>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.34812183</knowrob:m00>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.36669077</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.38102999</knowrob:m11>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.47392558</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.47392558</knowrob:m45>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.9356004</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.9356004</knowrob:m34>
+        <knowrob:m35 rdf:datatype="&xsd;double">1.3368266</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">1.3368266</knowrob:m53>
+        <knowrob:m55 rdf:datatype="&xsd;double">1.9431492</knowrob:m55>
+        <knowrob:m33 rdf:datatype="&xsd;double">2.0375961</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">4.6157706</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_kpyKjItu -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_kpyKjItu">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.00153021</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.00153021</knowrob:m10>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.0021042612</knowrob:m33>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.0037855191</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.0037855191</knowrob:m03>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.0049910257</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.0049910257</knowrob:m02>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.086260343</knowrob:m00>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.587344E-4</knowrob:m12>
+        <knowrob:m13 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">2.2730285E-4</knowrob:m31>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.3828376E-4</knowrob:m11>
+        <knowrob:m22 rdf:datatype="&xsd;double">6.6792138E-4</knowrob:m22>
+        <knowrob:m23 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">9.0134381E-4</knowrob:m32>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_l5zMAYaP -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_l5zMAYaP">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_q65cf18T -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_q65cf18T">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m05 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m50>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m41>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m32>
+        <knowrob:m13 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m31>
+        <knowrob:m30 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m03>
+        <knowrob:m12 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m21>
+        <knowrob:m40 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m04>
+        <knowrob:m45 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m54>
+        <knowrob:m25 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m52>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.2242652E-5</knowrob:m11>
+        <knowrob:m02 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m20>
+        <knowrob:m44 rdf:datatype="&xsd;double">1.3805615E-4</knowrob:m44>
+        <knowrob:m00 rdf:datatype="&xsd;double">2.3298952E-6</knowrob:m00>
+        <knowrob:m10 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m01>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.2781253E-5</knowrob:m33>
+        <knowrob:m34 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m43>
+        <knowrob:m22 rdf:datatype="&xsd;double">4.5378054E-6</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m24>
+        <knowrob:m53 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m53>
+        <knowrob:m35 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m35>
+        <knowrob:m51 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m15>
+        <knowrob:m55 rdf:datatype="&xsd;double">6.7392219E-5</knowrob:m55>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_qEq7uhKj -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_qEq7uhKj">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m02 rdf:datatype="&xsd;double">-0.073464741</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">-0.073464741</knowrob:m20>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.086040875</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.086040875</knowrob:m01>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.20233518</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.20233518</knowrob:m30>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.13291964</knowrob:m00>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.17144932</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.17144932</knowrob:m32>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.18951249</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.18951249</knowrob:m31>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.19018615</knowrob:m22>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.21574878</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.21574878</knowrob:m12>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.25281294</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.60740188</knowrob:m33>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_qlHlYBwD -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_qlHlYBwD">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_rSSFVhXn -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_rSSFVhXn">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m32 rdf:datatype="&xsd;double">-0.021723016</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">-0.021723016</knowrob:m23>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.02423065</knowrob:m05>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.02423065</knowrob:m50>
+        <knowrob:m03 rdf:datatype="&xsd;double">-0.031634592</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-0.031634592</knowrob:m30>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.035860962</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.035860962</knowrob:m04>
+        <knowrob:m52 rdf:datatype="&xsd;double">-0.038915983</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-0.038915983</knowrob:m25>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.043868711</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.043868711</knowrob:m24>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.24828833</knowrob:m14>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.24828833</knowrob:m41>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.0065879554</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.0065879554</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.011078478</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.011078478</knowrob:m02>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.011344491</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.011344491</knowrob:m01>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.01240308</knowrob:m00>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.016207576</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.016207576</knowrob:m51>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.017076909</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.017076909</knowrob:m13>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.02031026</knowrob:m22>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.13506246</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.13506246</knowrob:m43>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.22203429</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.22203429</knowrob:m45>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.24226374</knowrob:m11>
+        <knowrob:m35 rdf:datatype="&xsd;double">0.26186536</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">0.26186536</knowrob:m53>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.37533133</knowrob:m33>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.38865116</knowrob:m55>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.82082198</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_vUxFUU60 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_vUxFUU60">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m15 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">-0.0021720922</knowrob:m51>
+        <knowrob:m13 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">-0.0045395805</knowrob:m31>
+        <knowrob:m10 rdf:datatype="&xsd;double">-0.010770064</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-0.010770064</knowrob:m01>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.02431861</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.02431861</knowrob:m14>
+        <knowrob:m43 rdf:datatype="&xsd;double">-0.13633702</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">-0.13633702</knowrob:m34>
+        <knowrob:m23 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-1.6914035E-4</knowrob:m32>
+        <knowrob:m52 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-2.2116911E-4</knowrob:m25>
+        <knowrob:m12 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">-5.7276098E-4</knowrob:m21>
+        <knowrob:m30 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m30>
+        <knowrob:m03 rdf:datatype="&xsd;double">-5.8282045E-4</knowrob:m03>
+        <knowrob:m55 rdf:datatype="&xsd;double">0.002308019</knowrob:m55>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.0051600562</knowrob:m45>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.0051600562</knowrob:m54>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.0079228532</knowrob:m00>
+        <knowrob:m04 rdf:datatype="&xsd;double">0.011125515</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">0.011125515</knowrob:m40>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.022255551</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">0.085262824</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">0.34406829</knowrob:m44>
+        <knowrob:m22 rdf:datatype="&xsd;double">1.9972634E-4</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">2.5268409E-4</knowrob:m24>
+        <knowrob:m50 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">4.5836E-4</knowrob:m05>
+        <knowrob:m20 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">7.2807351E-4</knowrob:m02>
+        <knowrob:m35 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">7.5687776E-4</knowrob:m53>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_wYDDdsL6 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_wYDDdsL6">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m02 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m20>
+        <knowrob:m01 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m10>
+        <knowrob:m03 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m30>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m12>
+        <knowrob:m22 rdf:datatype="&xsd;double">2.2854818E-8</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.774291E-4</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.7857238E-4</knowrob:m33>
+        <knowrob:m32 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m32>
+        <knowrob:m23 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m23>
+        <knowrob:m00 rdf:datatype="&xsd;double">6.4318088E-6</knowrob:m00>
+        <knowrob:m31 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m13>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_yK2O2jdn -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_yK2O2jdn">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m02 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m02>
+        <knowrob:m20 rdf:datatype="&xsd;double">-1.0526788E-7</knowrob:m20>
+        <knowrob:m10 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">-7.1312571E-6</knowrob:m01>
+        <knowrob:m03 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-7.7964342E-8</knowrob:m30>
+        <knowrob:m21 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">1.0102258E-7</knowrob:m12>
+        <knowrob:m22 rdf:datatype="&xsd;double">2.2854818E-8</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">2.774291E-4</knowrob:m11>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.7857238E-4</knowrob:m33>
+        <knowrob:m23 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">5.9840336E-7</knowrob:m32>
+        <knowrob:m00 rdf:datatype="&xsd;double">6.4318088E-6</knowrob:m00>
+        <knowrob:m13 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">6.6195846E-7</knowrob:m31>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_zO8MlRTk -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_zO8MlRTk">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m50 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-1.6683095E-6</knowrob:m05>
+        <knowrob:m41 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-1.9534199E-5</knowrob:m14>
+        <knowrob:m23 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">-2.6756319E-6</knowrob:m32>
+        <knowrob:m31 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m31>
+        <knowrob:m13 rdf:datatype="&xsd;double">-2.8407995E-6</knowrob:m13>
+        <knowrob:m03 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">-3.5387895E-6</knowrob:m30>
+        <knowrob:m21 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m21>
+        <knowrob:m12 rdf:datatype="&xsd;double">-3.9831921E-6</knowrob:m12>
+        <knowrob:m04 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m04>
+        <knowrob:m40 rdf:datatype="&xsd;double">-4.1550876E-6</knowrob:m40>
+        <knowrob:m54 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">-5.425453E-5</knowrob:m45>
+        <knowrob:m52 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">-5.9786078E-6</knowrob:m25>
+        <knowrob:m11 rdf:datatype="&xsd;double">1.2242652E-5</knowrob:m11>
+        <knowrob:m20 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">1.2614437E-6</knowrob:m02>
+        <knowrob:m44 rdf:datatype="&xsd;double">1.3805615E-4</knowrob:m44>
+        <knowrob:m00 rdf:datatype="&xsd;double">2.3298952E-6</knowrob:m00>
+        <knowrob:m10 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m10>
+        <knowrob:m01 rdf:datatype="&xsd;double">2.5450759E-6</knowrob:m01>
+        <knowrob:m33 rdf:datatype="&xsd;double">3.2781253E-5</knowrob:m33>
+        <knowrob:m43 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m43>
+        <knowrob:m34 rdf:datatype="&xsd;double">3.689584E-5</knowrob:m34>
+        <knowrob:m22 rdf:datatype="&xsd;double">4.5378054E-6</knowrob:m22>
+        <knowrob:m42 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">4.8670404E-6</knowrob:m24>
+        <knowrob:m35 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">5.0958017E-6</knowrob:m53>
+        <knowrob:m15 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">5.4321331E-6</knowrob:m51>
+        <knowrob:m55 rdf:datatype="&xsd;double">6.7392219E-5</knowrob:m55>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Matrix_zlqGA9vM -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Matrix_zlqGA9vM">
+        <rdf:type rdf:resource="&knowrob;Matrix"/>
+        <knowrob:m50 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m50>
+        <knowrob:m05 rdf:datatype="&xsd;double">-0.0032148066</knowrob:m05>
+        <knowrob:m40 rdf:datatype="&xsd;double">-0.015847272</knowrob:m40>
+        <knowrob:m04 rdf:datatype="&xsd;double">-0.015847272</knowrob:m04>
+        <knowrob:m42 rdf:datatype="&xsd;double">-0.063070203</knowrob:m42>
+        <knowrob:m24 rdf:datatype="&xsd;double">-0.063070203</knowrob:m24>
+        <knowrob:m41 rdf:datatype="&xsd;double">-0.38262094</knowrob:m41>
+        <knowrob:m14 rdf:datatype="&xsd;double">-0.38262094</knowrob:m14>
+        <knowrob:m52 rdf:datatype="&xsd;double">0.020164458</knowrob:m52>
+        <knowrob:m25 rdf:datatype="&xsd;double">0.020164458</knowrob:m25>
+        <knowrob:m03 rdf:datatype="&xsd;double">0.055197056</knowrob:m03>
+        <knowrob:m30 rdf:datatype="&xsd;double">0.055197056</knowrob:m30>
+        <knowrob:m23 rdf:datatype="&xsd;double">0.096867201</knowrob:m23>
+        <knowrob:m32 rdf:datatype="&xsd;double">0.096867201</knowrob:m32>
+        <knowrob:m15 rdf:datatype="&xsd;double">0.16187112</knowrob:m15>
+        <knowrob:m51 rdf:datatype="&xsd;double">0.16187112</knowrob:m51>
+        <knowrob:m13 rdf:datatype="&xsd;double">0.1799161</knowrob:m13>
+        <knowrob:m31 rdf:datatype="&xsd;double">0.1799161</knowrob:m31>
+        <knowrob:m01 rdf:datatype="&xsd;double">0.33293665</knowrob:m01>
+        <knowrob:m10 rdf:datatype="&xsd;double">0.33293665</knowrob:m10>
+        <knowrob:m12 rdf:datatype="&xsd;double">0.3433764</knowrob:m12>
+        <knowrob:m21 rdf:datatype="&xsd;double">0.3433764</knowrob:m21>
+        <knowrob:m20 rdf:datatype="&xsd;double">0.34349214</knowrob:m20>
+        <knowrob:m02 rdf:datatype="&xsd;double">0.34349214</knowrob:m02>
+        <knowrob:m00 rdf:datatype="&xsd;double">0.34812183</knowrob:m00>
+        <knowrob:m22 rdf:datatype="&xsd;double">0.36669077</knowrob:m22>
+        <knowrob:m11 rdf:datatype="&xsd;double">0.38102999</knowrob:m11>
+        <knowrob:m54 rdf:datatype="&xsd;double">0.47392558</knowrob:m54>
+        <knowrob:m45 rdf:datatype="&xsd;double">0.47392558</knowrob:m45>
+        <knowrob:m34 rdf:datatype="&xsd;double">0.9356004</knowrob:m34>
+        <knowrob:m43 rdf:datatype="&xsd;double">0.9356004</knowrob:m43>
+        <knowrob:m35 rdf:datatype="&xsd;double">1.3368266</knowrob:m35>
+        <knowrob:m53 rdf:datatype="&xsd;double">1.3368266</knowrob:m53>
+        <knowrob:m55 rdf:datatype="&xsd;double">1.9431492</knowrob:m55>
+        <knowrob:m33 rdf:datatype="&xsd;double">2.0375961</knowrob:m33>
+        <knowrob:m44 rdf:datatype="&xsd;double">4.6157706</knowrob:m44>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_0DXsggK4 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_0DXsggK4">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.5043</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">-1.2106</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.6233</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.6823</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_0VTMeUbN -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_0VTMeUbN">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_AYQwaWP0 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_AYQwaWP0">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.0016</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">-3.0E-4</knowrob:v5>
+        <knowrob:v0 rdf:datatype="&xsd;double">-9.0E-4</knowrob:v0>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0012</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.002</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">3.0E-4</knowrob:v2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_AjEf19IO -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_AjEf19IO">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0729</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.513</knowrob:v4>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.6556</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0228</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.3043</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.5404</knowrob:v1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_DpJxQ9fM -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_DpJxQ9fM">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.004</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.0498</knowrob:v4>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0727</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.0E-4</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0126</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0643</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_EFRpcOVy -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_EFRpcOVy">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.004</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.0498</knowrob:v4>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0727</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.0E-4</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0126</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0643</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_Ev8FnJZK -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_Ev8FnJZK">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.5493</knowrob:v3>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.6168</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.7227</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.2517</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_FwTrvdSH -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_FwTrvdSH">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.0016</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">-3.0E-4</knowrob:v5>
+        <knowrob:v0 rdf:datatype="&xsd;double">-9.0E-4</knowrob:v0>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0012</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.002</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">3.0E-4</knowrob:v2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_GMwAdQZr -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_GMwAdQZr">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0182</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.1551</knowrob:v0>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.3124</knowrob:v4>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0566</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0596</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.4875</knowrob:v3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_LIbSZjtA -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_LIbSZjtA">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_OMfTPlZA -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_OMfTPlZA">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0344</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.1104</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">-1.0349</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.046</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">-1.1476</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0908</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_OSv9Zg6L -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_OSv9Zg6L">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0182</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.1551</knowrob:v0>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.3124</knowrob:v4>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0566</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0596</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.4875</knowrob:v3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_VXIFKq7x -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_VXIFKq7x">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.004</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.0498</knowrob:v4>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0727</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.0E-4</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0126</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0643</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_YXwLmpwv -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_YXwLmpwv">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_ZZ2wYsOx -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_ZZ2wYsOx">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0344</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.1104</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">-1.0349</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.046</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">-1.1476</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0908</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_aa1HyASz -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_aa1HyASz">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_bOrx9naW -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_bOrx9naW">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0729</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.513</knowrob:v4>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.6556</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0228</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.3043</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.5404</knowrob:v1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_dpEaPF6l -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_dpEaPF6l">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.5043</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">-1.2106</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.6233</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.6823</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_ffjyOABB -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_ffjyOABB">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0</knowrob:v3>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0026</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0119</knowrob:v1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_glZGPSHu -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_glZGPSHu">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.5493</knowrob:v3>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.6168</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.7227</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.2517</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_gvIsEHBj -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_gvIsEHBj">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.0016</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">-3.0E-4</knowrob:v5>
+        <knowrob:v0 rdf:datatype="&xsd;double">-9.0E-4</knowrob:v0>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0012</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.002</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">3.0E-4</knowrob:v2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_hFZY7ONa -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_hFZY7ONa">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.0344</knowrob:v3>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.1104</knowrob:v4>
+        <knowrob:v2 rdf:datatype="&xsd;double">-1.0349</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.046</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">-1.1476</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0908</knowrob:v5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_jhSp6DlB -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_jhSp6DlB">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.5043</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">-1.2106</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">-1.6233</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.6823</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_opBomE9w -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_opBomE9w">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0</knowrob:v3>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0026</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0119</knowrob:v1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_pzkabJ5l -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_pzkabJ5l">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0182</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.1551</knowrob:v0>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.3124</knowrob:v4>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0566</knowrob:v1>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0596</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.4875</knowrob:v3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_qO0SkkG0 -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_qO0SkkG0">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v3 rdf:datatype="&xsd;double">-0.5493</knowrob:v3>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.6168</knowrob:v2>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.7227</knowrob:v1>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.2517</knowrob:v0>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_tbbu63ER -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_tbbu63ER">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_uMBmGPWg -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_uMBmGPWg">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0729</knowrob:v2>
+        <knowrob:v4 rdf:datatype="&xsd;double">-0.513</knowrob:v4>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.6556</knowrob:v0>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.0228</knowrob:v5>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.3043</knowrob:v3>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.5404</knowrob:v1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_vn1ceDgF -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_vn1ceDgF">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.036802968</knowrob:v2>
+        <knowrob:v0 rdf:datatype="&xsd;double">-0.038787154</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">-0.43472111</knowrob:v1>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.013939168</knowrob:v3>
+        <knowrob:v5 rdf:datatype="&xsd;double">0.023017762</knowrob:v5>
+        <knowrob:v4 rdf:datatype="&xsd;double">0.4952204</knowrob:v4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://knowrob.org/kb/knowrob.owl#Vector_wBRUneQr -->
+
+    <owl:NamedIndividual rdf:about="&knowrob;Vector_wBRUneQr">
+        <rdf:type rdf:resource="&knowrob;Vector"/>
+        <knowrob:v2 rdf:datatype="&xsd;double">-0.0</knowrob:v2>
+        <knowrob:v3 rdf:datatype="&xsd;double">0.0</knowrob:v3>
+        <knowrob:v0 rdf:datatype="&xsd;double">0.0026</knowrob:v0>
+        <knowrob:v1 rdf:datatype="&xsd;double">0.0119</knowrob:v1>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.4.992) http://owlapi.sourceforge.net -->
+
+

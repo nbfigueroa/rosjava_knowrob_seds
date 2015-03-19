@@ -14,3 +14,4 @@
  * the License.
  */
 include 'rosjava_knowrob_seds'
+include 'rosjava_gmm_to_owl'

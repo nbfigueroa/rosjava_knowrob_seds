@@ -27,4 +27,5 @@
 :- rdf_db:rdf_register_ns(seds, 'http://knowrob.org/kb/knowrob-seds.owl#', [keep(true)]).
 
 % Test data for development:
-:- owl_parse('package://rosjava_knowrob_seds/owl/dummy-task.owl').
+:- owl_parse('package://rosjava_knowrob_seds/owl/test_task.owl').
+

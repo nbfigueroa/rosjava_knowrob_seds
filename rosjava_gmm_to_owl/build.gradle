@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'application' 
+
+mainClassName = 'org.knowrob.imitation.GMMToOWL'
+
+//Get dependencies from Maven central repository
+repositories {
+    mavenCentral()
+}
+
+//Project dependencies
+dependencies {
+  // Dependencies on rosjava projects in another catkin package
+  compile 'org.ros.rosjava_core:rosjava:[0.1,)'
+  compile 'org.knowrob.knowrob_common:knowrob_common:[0.1,)'
+
+  // Dependency on an external jar from mavencentral
+  compile 'java3d:vecmath:1.3.1'
+  compile 'org.yaml:snakeyaml:1.15'
+}

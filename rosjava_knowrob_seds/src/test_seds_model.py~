@@ -4,9 +4,9 @@
 import roslib;
 roslib.load_manifest('rosjava_knowrob_seds')
 
+import rospy
 from json_prolog import json_prolog
 
-import rospy
 from std_msgs.msg import String
 from robohow_common_msgs.msg import MotionPhase
 from robohow_common_msgs.msg import MotionModel
@@ -21,18 +21,10 @@ if __name__ == '__main__':
     
     prolog = json_prolog.Prolog()
 
+    print 'WORKINNNN'
     try:
         
-        query = prolog.query("""rdfs_subclass_of(Phase, seds:'SEDSMotion'),
-                                phase_properties(Phase, ID, Object, Threshold, Atractor, Models),
-                                member(Model, Models),
-                                motion_properties(Model, Type, GMMs),
-                                member(GMM, GMMs),
-                                gmm_properties(GMM, GMMType, InputType, InputDim, OutputType, OutputDim, Gaussians),
-                                member(Gaussian, Gaussians),
-                                gaussian_components(Gaussian, Mean, Cov, Prior),
-                                vector_elements(Mean, MeanVec),
-                                matrix_elements(Cov, CovMat)""")
+        query = prolog.query("rdfs_subclass_of(Phase, seds:'SEDSMotion'), phase_properties(Phase, ID, Object, Threshold, Atractor, Models), member(Model, Models), motion_properties(Model, Type, GMMs), member(GMM, GMMs), gmm_properties(GMM, GMMType, InputType, InputDim, OutputType, OutputDim, Gaussians), member(Gaussian, Gaussians), gaussian_components(Gaussian, Mean, Cov, Prior), vector_elements(Mean, MeanVec),matrix_elements(Cov, CovMat)")
         
         for solution in query.solutions():
 

@@ -46,4 +46,15 @@ task writeClasspath << {
                                                project.version + ".jar" + "\n"
 }
 
+task deployApp(dependsOn: 'installApp') << {
+  File binDir = new File(project.projectDir, '/bin')
+  if (! binDir.isDirectory()) {
+    println "Creating $binDir directory"
+    binDir.mkdirs()
+  }
+  File link = new File(binDir,"rosjava_knowrob_seds")
+  File target = new File(project.projectDir, "build/install/$project.name/bin/$project.name")
+  println "Creating symlink from $link.absolutePath to $target.absolutePath"
+  ant.symlink(link: link.absolutePath, resource: target.absolutePath, overwrite: true)
+}
 

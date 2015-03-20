@@ -5,9 +5,11 @@
     <!ENTITY local_path 'file://@LOCAL_PACKAGE_PATH@/owl/'>
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
     <!ENTITY knowrob "http://knowrob.org/kb/knowrob.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY knowrob_seds "http://knowrob.org/kb/knowrob_seds.owl#" >
 ]>
 
 

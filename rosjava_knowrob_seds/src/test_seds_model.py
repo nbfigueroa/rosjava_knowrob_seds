@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-
-import roslib;
-roslib.load_manifest('rosjava_knowrob_seds')
-
 import rospy
 from json_prolog import json_prolog
 

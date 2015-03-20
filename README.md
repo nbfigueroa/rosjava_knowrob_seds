@@ -1,5 +1,6 @@
 # rosjava_knowrob_seds
 Knowrob_seds package upgraded to the Catkin/RosJava version.
+This module provides methods for representing and reasoning about tasks learned through SEDS motion specifications in KnowRob.
 
 #### Installation
 ###### Prerequisites
@@ -21,11 +22,11 @@ $ catkin_make
 Reads task models (motion models and constraints for each phase) from a ./task directory and converts to OWL file.
 
 ```
-$ rosrun rosjava_knowrob_seds rosjava_gmm_to_owl ./test_task >> test_task.owl
+rosrun rosjava_knowrob_seds ./rosjava_gmm_to_owl/build/install/rosjava_gmm_to_owl/bin/rosjava_gmm_to_owl ./test_task >> test-task.owl
 ```
 
 #### Test Client
-Put generated test_task.owl file into rosjava_knowrob_seds/owl folder. Start the knowledge base with the provided launch file and test the query interface with the Python test client, as below:
+Put generated test-task.owl file into rosjava_knowrob_seds/owl folder. Start the knowledge base with the provided launch file and test the query interface with the Python test client, as below:
 
 ```
 $ roslaunch rosjava_knowrob_seds knowrob_seds.launch

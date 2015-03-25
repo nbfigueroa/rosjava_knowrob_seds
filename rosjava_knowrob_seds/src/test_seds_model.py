@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import json
 import rospy
 from json_prolog import json_prolog
 
@@ -13,15 +14,18 @@ from robohow_common_msgs.msg import GaussianDistribution
 if __name__ == '__main__':
   
     rospy.init_node('gmm_dummy_publisher')
-    pub = rospy.Publisher('gmm_msgs', MotionPhase)
-    
+    pub = rospy.Publisher('gmm_msgs', MotionPhase)   
+
+    rospy.loginfo('Retrieving infomation from Knowledge base')
+
     prolog = json_prolog.Prolog()
 
-    print 'WORKINNNN'
     try:
-        
-        query = prolog.query("""rdfs_subclass_of(Phase, seds:'SEDSMotion'), phase_properties(Phase, ID, Object, Threshold, Atractor, Models), member(Model, Models), motion_properties(Model, Type, GMMs), member(GMM, GMMs), gmm_properties(GMM, GMMType, InputType, InputDim, OutputType, OutputDim, Gaussians), member(Gaussian, Gaussians), gaussian_components(Gaussian, Mean, Cov, Prior), vector_elements(Mean, MeanVec),matrix_elements(Cov, CovMat)""")
-        
+        query_str = """rdfs_subclass_of(Phase, seds:'SEDSMotion'), phase_properties(Phase, ID, Object, Threshold, Atractor, Models), member(Model, Models), motion_properties(Model, Type, GMMs), member(GMM, GMMs), gmm_properties(GMM, GMMType, InputType, InputDim, OutputType, OutputDim, Gaussians), member(Gaussian, Gaussians), gaussian_components(Gaussian, Mean, Cov, Prior), vector_elements(Mean, MeanVec),matrix_elements(Cov, CovMat)"""
+
+        query = prolog.query(query_str)
+
+    	print 'Query succesful'        
         for solution in query.solutions():
 
             gauss = GaussianDistribution(

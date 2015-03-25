@@ -27,7 +27,9 @@ find_package(catkin REQUIRED rosjava_build_tools json_prolog)
 # add tasks to this for you when you create subprojects.
 catkin_rosjava_setup(installApp publishMavenJavaPublicationToMavenRepository writeClasspath)
 #catkin_rosjava_setup(publishMavenJavaPublicationToMavenRepository)
-catkin_package()
+catkin_package(
+DEPENDS json_prolog
+)
 
 ##############################################################################
 # Installation

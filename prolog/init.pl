@@ -23,6 +23,7 @@
 
 :- register_ros_package(knowrob_common).
 :- register_ros_package(knowrob_srdl).
+:- register_ros_package(knowrob_objects).
 
 :- register_ros_package(rosjava_knowrob_seds).
 :- use_module(library(rosjava_knowrob_seds)).
@@ -38,7 +39,7 @@
 % Parse owl files, Register name spaces
 
 %:- owl_parse('package://rosjava_knowrob_seds/owl/knowrob-seds.owl').
-:- rdf_register_ns(seds, 'http://knowrob.org/kb/knowrob-seds.owl#', [keep(true)]).
+:- rdf_db:rdf_register_ns(seds, 'http://knowrob.org/kb/knowrob-seds.owl#', [keep(true)]).
 
 % Task to be loaded
 %:- owl_parse('package://rosjava_knowrob_seds/owl/dummy-task.owl').

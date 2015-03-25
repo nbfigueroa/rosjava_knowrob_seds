@@ -29,11 +29,6 @@
       matrix_elements/2
     ]).
 
-%% :- use_module(library('semweb/rdfs')).
-%% :- use_module(library('thea/owl_parser')).
-%% :- use_module(library('semweb/owl')).
-%% :- use_module(library('semweb/rdfs_computable')).
-%% :- use_module(library('jpl')).
 
 :- use_module(library('semweb/rdfs')).
 :- use_module(library('semweb/rdf_db')).
@@ -56,7 +51,7 @@
 :- rdf_db:rdf_register_ns(owl, 'http://www.w3.org/2002/07/owl#', [keep(true)]).
 :- rdf_db:rdf_register_ns(knowrob, 'http://knowrob.org/kb/knowrob.owl#', [keep(true)]).
 :- rdf_db:rdf_register_ns(xsd, 'http://www.w3.org/2001/XMLSchema#', [keep(true)]).
-
+:- rdf_db:rdf_register_ns(knowrob_coordinates, 'http://ias.cs.tum.edu/kb/knowrob_coordinates.owl#', [keep(true)]).
 :- rdf_db:rdf_register_ns(seds, 'http://knowrob.org/kb/knowrob-seds.owl#', [keep(true)]).
 
 
